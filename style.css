@@ -2,6 +2,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
+    overflow: hidden;
     font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
     text-decoration: none;
 }
@@ -207,7 +208,7 @@ a[data-margin]{
     gap: 12px
 }
 
-.content > *{
+.iphone16pro,.iphone16,.apple_watch{
     cursor: pointer;
     position: relative;
     height: 692px;
@@ -351,13 +352,201 @@ a[data-margin]{
     .iphone16pro_overlay , .iphone16_overlay{
         transform: translate(-50%,6%);
     }
+
+    .ipad_pro_overlay p{
+        width: 230px;
+    }
+
+    .airpods_overlay p{
+        width: 230px;
+    }
 }
 
+.products_grid{
+    margin-left: 12px;
+    margin-right: 12px;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-template-rows: repeat(3,580px);
+    gap: 12px;
+}
 
+.products_grid > *{
+    background-color: #28282B;
+    position: relative;
+}
 
+.apple_watch_ultra_overlay{
+    position: absolute;
+    top: 9%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 212px;
+    height: 170px;
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    align-items: center;
+}
 
+.apple_watch_ultra_overlay_top{
+    width: 150px;
+}
 
+.products_grid > * > img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
 
+.apple_watch_ultra_overlay_top img{
+    width: 100%;
+    height: 100%;
+}
+
+.apple_watch_ultra_overlay_bottom{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+}
+
+.apple_watch_ultra_overlay_bottom p{
+    font-size: 21px;
+    color: white;
+}
+
+.products_grid .learn_buy{
+    display: flex;
+    gap: 12px;
+}
+
+.products_grid #learn, #get_estimate{
+    font-weight: 400;
+    font-size: 14px;
+    padding: 11px 15px;
+    border-radius: 50px;
+    color: rgb(255,255,255);
+    background-color: rgb(0,119,237);
+}
+
+.products_grid #buy{
+    font-weight: 400;
+    font-size: 14px;
+    padding: 11px 15px;
+    border-radius: 50px;
+    color: rgb(41,151,255);
+    border: 1px solid rgb(41,151,255);
+}
+
+.products_grid #buy:hover{
+    color: rgb(255,255,255);
+    background-color: rgb(0,119,237);
+}
+
+.airpods_overlay{
+    position: absolute;
+    bottom: 6%;
+    left: 50%;
+    transform: translateX(-50%);
+    height: 180px;
+    width: 400px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    align-items: center;
+}
+
+.airpods_overlay h1, .ipad_pro_overlay h1{
+    font-weight: 500;
+    font-size: 40px;
+    color: white;
+}
+.airpods_overlay p , .ipad_pro_overlay p{
+    text-align: center;
+    font-size: 21px;
+    color: white;
+}
+
+.ipad_pro_overlay p{
+    margin-bottom: 15px;
+}
+
+.airpods_max_overlay{
+    width: 400px;
+    position: absolute;
+    bottom: 8%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    align-items: center;
+}
+
+.airpods_max_overlay h1, .macbook_air_overlay h1{
+    font-weight: 500;
+    font-size: 40px;
+    color:#4a4848;
+}
+.airpods_max_overlay p, .macbook_air_overlay p{
+    text-align: center;
+    font-size: 21px;
+    color:#4a4848;
+    margin-bottom: 10px;
+}
+
+.macbook_air_overlay, .ipad_pro_overlay{
+    width: 400px;
+    position: absolute;
+    top: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    display: flex;
+    flex-direction: column;
+    gap: 2px;
+    align-items: center;
+}
+
+.ipad_pro_overlay{
+    top: 8%;
+}
+
+.iphone_tradein_overlay{
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 320px;
+    height: 125px;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+    align-items: center;
+}
+
+.iphone_tradein_overlay_bottom p{
+    font-size: 21px;
+}
+
+.iphone_tradein_overlay_top{
+    width: 150px;
+}
+
+.iphone_tradein_overlay_top img{
+    width: 100%;
+}
+
+.iphone_tradein_overlay_bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+.iphone_tradein_overlay_bottom a{
+    align-self: center;
+    width: 142px;
+}
 
 
 
