@@ -213,6 +213,9 @@ a[data-margin]{
     height: 692px;
 }
 
+.image_medium{
+    display: none;
+}
 
 .content > * > img{
     width: 100%;
@@ -220,11 +223,11 @@ a[data-margin]{
     object-fit: cover;
 }
 
-.content > * > div{
+.iphone16pro_overlay , .iphone16_overlay{
     position: absolute;
     bottom: 4%;
     left: 50%;
-    transform: translateX(-50%);
+    transform: translate(-50%,0%);
     width: 500px;
     height: 600px;
     margin-left: 10px;
@@ -233,37 +236,37 @@ a[data-margin]{
     gap: 400px;
 }
 
-.content > * > div > :first-child{
+.iphone16pro_overlay_top, .iphone16_overlay_top{
     display: flex;
     flex-direction: column;
 }
 
-.content > * > div > :first-child > h1{
+.iphone16pro_overlay_top h1 , .iphone16_overlay_top h1{
     color: rgb(255,255,255);
     font-size: 50px;
     text-align: center;
 }
 
-.content > * > div > :first-child > p{
+.iphone16pro_overlay_top p , .iphone16_overlay_top p{
     color: rgb(255,255,255);
     font-size: 26px;
     text-align: center;
 }
 
-.content > * > div > :last-child{
+.iphone16pro_overlay_bottom , .iphone16_overlay_bottom{
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 
-.content > * > div > :last-child > div{
+.iphone16pro_overlay_bottom .learn_buy, .iphone16_overlay_bottom .learn_buy, .apple_watch_overlay_bottom .learn_buy{
     display: flex;
     gap: 25px;
     width: 300px;
     margin-bottom: 15px;
 }
 
-.content > * > div > :last-child > div > :first-child{
+.iphone16pro_overlay_bottom #learn, .iphone16_overlay_bottom #learn, .apple_watch_overlay_bottom #learn{
     font-weight: 400;
     font-size: 17px;
     padding: 11px 21px;
@@ -273,7 +276,7 @@ a[data-margin]{
     text-align: center;
 }
 
-.content > * > div > :last-child > div > :last-child{
+.iphone16pro_overlay_bottom #buy, .iphone16_overlay_bottom #buy, .apple_watch_overlay_bottom #buy{
     font-weight: 400;
     font-size: 17px;
     padding: 11px 21px;
@@ -283,16 +286,73 @@ a[data-margin]{
     text-align: center;
 }
 
-.content > * > div > :last-child > div > :last-child:hover{
+.iphone16pro_overlay_bottom #buy:hover, .iphone16_overlay_bottom #buy:hover, .apple_watch_overlay_bottom #buy:hover{
     color: rgb(255,255,255);
     background-color: rgb(0,119,237);
 }
 
-.content > * > div > :last-child p{
+.iphone16pro_overlay_bottom p, .iphone16_overlay_bottom p{
     color: rgb(115,110,113);
     font-size: 20px;
     font-weight: 400;
 }
+
+.apple_watch_overlay{
+    position: absolute;
+    top: 8%;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 230px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.apple_watch_overlay_top img{
+    width: 200px;
+    height: 100%;
+}
+
+.apple_watch_overlay_bottom{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.apple_watch_overlay_bottom p{
+    font-size: 26px;
+    font-weight: 400;
+    color:#4a4848;
+    text-align: center;
+
+}
+
+@media (width<1069px) {
+    .content > *{
+        height: 650px;
+    }
+    .image_big{
+        display: none;
+    }
+    .image_medium{
+        display: block;
+    }
+    .iphone16pro_overlay_top h1 , .iphone16_overlay_top h1{
+        font-size: 47px;
+    }
+    .iphone16pro_overlay_top p , .iphone16_overlay_top p{
+        font-size: 23px;
+    }
+
+    .iphone16pro_overlay_bottom p, .iphone16_overlay_bottom p{
+        font-size: 17px;
+    }
+    .iphone16pro_overlay , .iphone16_overlay{
+        transform: translate(-50%,6%);
+    }
+}
+
 
 
 
