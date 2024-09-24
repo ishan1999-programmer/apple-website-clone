@@ -1,7 +1,11 @@
 
-let nav_bar_items = document.querySelector(".nav_bar_items").querySelectorAll("a");
+let nav_bar_items = document.querySelector(".big_nav").querySelectorAll("a");
 let content = document.querySelector(".content");
 let nav_modals = document.querySelector(".nav_modals")
+let menu = document.querySelector("#menu");
+let menu_modal = document.querySelector(".menu_modal");
+let close_button = document.querySelector("#close_button");
+let menu_items = document.querySelectorAll(".menu_items > :not(:first-child)");
 
 nav_bar_items.forEach((val,idx)=>{
     if(idx!=0 && idx!=nav_bar_items.length-1 && idx!=nav_bar_items.length-2){
@@ -73,6 +77,31 @@ function show_results(e){
         result_box.style.display = "block";
     }
 }
+
+menu.addEventListener("click" , (e)=>{
+    e.preventDefault();
+    menu_modal.classList.replace("close_modal" , "open_modal");
+});
+
+close_button.addEventListener("click" , ()=>{
+    menu_modal.classList.replace("open_modal" , "close_modal");
+});
+
+menu_items.forEach((val)=>{
+    val.addEventListener("mouseover", show_image);
+    val.addEventListener("mouseleave" , hide_image);
+});
+
+function hide_image(e){    
+    document.querySelector(`#${e.currentTarget.id} img`).style.opacity = 0;
+};
+
+
+function show_image(e){    
+    document.querySelector(`#${e.currentTarget.id} img`).style.opacity = 1;
+};
+
+
 
 
 
