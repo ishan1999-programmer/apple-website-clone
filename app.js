@@ -4,8 +4,11 @@ let content = document.querySelector(".content");
 let nav_modals = document.querySelector(".nav_modals")
 let menu = document.querySelector("#menu");
 let menu_modal = document.querySelector(".menu_modal");
-let close_button = document.querySelector("#close_button");
+let menu_close_button = document.querySelector("#menu_close_button");
 let menu_items = document.querySelectorAll(".menu_items > :not(:first-child)");
+let search_modal_small = document.querySelector(".search_modal_small");
+let small_search_close_button = document.querySelector("#small_search_close_button");
+let small_search = document.querySelector("#small_search");
 
 nav_bar_items.forEach((val,idx)=>{
     if(idx!=0 && idx!=nav_bar_items.length-1 && idx!=nav_bar_items.length-2){
@@ -52,11 +55,15 @@ promise.then((response)=>response.json()).then((data)=>{
 });
 
 let search_bar = document.querySelector("#search_bar");
+let search_bar_small = document.querySelector("#search_bar_small");
 let result_box = document.querySelector(".result_box");
+let result_box_small = document.querySelector(".result_box_small");
 let results = document.querySelector(".results");
-let no_item_found = document.querySelector("#no_item_found");
+let results_small = document.querySelector(".results_small");
+let no_item_found_small = document.querySelector("#no_item_found_small");
 
 search_bar.addEventListener("input" , show_results);
+search_bar_small.addEventListener("input" , show_results_small);
 
 function show_results(e){
     let searched_value = e.target.value.toLowerCase();
@@ -78,13 +85,42 @@ function show_results(e){
     }
 }
 
+function show_results_small(e){
+    let searched_value = e.target.value.toLowerCase();
+    if(searched_value==""){
+        result_box_small.style.display = "none";
+    }
+    else{
+        let matched_items = all_items.filter(val => val.name.toLowerCase().startsWith(searched_value));
+        if(matched_items.length==0){
+            results_small.innerHTML = "";
+            no_item_found_small.style.display = "block";
+        }
+        else{
+            no_item_found_small.style.display = "none";
+            let matched_items_list = matched_items.map((val,idx) => idx<=8 ? `<li>${val.name}</li>` : "");
+            results_small.innerHTML = `${matched_items_list.join("")}`;
+        }
+        result_box_small.style.display = "block";
+    }
+}
+
 menu.addEventListener("click" , (e)=>{
     e.preventDefault();
     menu_modal.classList.replace("close_modal" , "open_modal");
 });
 
-close_button.addEventListener("click" , ()=>{
+small_search.addEventListener("click" , (e)=>{
+    e.preventDefault();
+    search_modal_small.classList.replace("close_modal" , "open_modal");
+});
+
+menu_close_button.addEventListener("click" , ()=>{
     menu_modal.classList.replace("open_modal" , "close_modal");
+});
+
+small_search_close_button.addEventListener("click" , ()=>{
+    search_modal_small.classList.replace("open_modal" , "close_modal");
 });
 
 menu_items.forEach((val)=>{

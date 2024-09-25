@@ -123,7 +123,7 @@
     z-index: 12;
 }
 
-.menu_modal{
+.menu_modal,.search_modal_small{
     position: fixed;
     top: 0%;
     height: 200vh;
@@ -142,31 +142,31 @@
     opacity: 1;
 }
 
-.nav_modals > :not(:last-child) > :first-child{
+.nav_modals > :nth-last-child(n+4)  > :first-child{
     padding-top: 40px;
     width: 1000px;
     display: flex;
     gap: 90px;
 }
 
-.nav_modals > :not(:last-child) > :first-child > *{
+.nav_modals > :nth-last-child(n+4)  > :first-child > *{
     display: flex;
     flex-direction: column;
     gap: 10px;
 }
 
-.nav_modals > :not(:last-child) > :first-child > * > :first-child{
+.nav_modals > :nth-last-child(n+4)  > :first-child > * > :first-child{
     font-size: 12px;
     color: #86868B;
     margin-bottom: 8px;
 }
 
-.nav_modals > :not(:last-child) > :first-child > :first-child > :not(:first-child){
+.nav_modals > :nth-last-child(n+4)  > :first-child > :first-child > :not(:first-child){
     font-size: 24px;
     color: #E8E8ED;
 }
 
-.nav_modals > :not(:last-child) > :first-child > :not(:first-child) > :not(:first-child){
+.nav_modals > :nth-last-child(n+4)  > :first-child > :not(:first-child) > :not(:first-child){
     font-size: 12px;
     color: #E8E8ED;
 }
@@ -181,7 +181,15 @@ a[data-margin]{
     padding-top: 40px;
 }
 
-#search_bar{
+.search_modal_small_content{
+    max-width: 500px;
+    height: 390px;
+    padding-top: 40px;
+    padding-left: 40px;
+    padding-right: 40px;
+}
+
+#search_bar,#search_bar_small{
     width: 100%;
     height: 35px;
     padding: 20px;
@@ -194,7 +202,7 @@ a[data-margin]{
     margin-bottom: 8px;
 }
 
-.result_box{
+.result_box,.result_box_small{
     width: 100%;
     height: 100%;
     background-color: #28282B;
@@ -203,7 +211,7 @@ a[data-margin]{
     padding: 15px;
 }
 
-.results li{
+.results li, .results_small li{
     list-style: none;
     color: white;
     font-size: larger;
@@ -212,7 +220,7 @@ a[data-margin]{
     padding-bottom: 2px;
 }
 
-#no_item_found{
+#no_item_found,#no_item_found_small{
     font-size: larger;
     color: rgb(205, 30, 30);
     font-style: italic;
@@ -399,7 +407,6 @@ a[data-margin]{
     height: 100%;
 }
 
-
 .apple_watch_ultra_overlay_bottom{
     display: flex;
     flex-direction: column;
@@ -458,6 +465,7 @@ a[data-margin]{
     font-size: 40px;
     color: white;
 }
+
 .airpods_overlay p , .ipad_pro_overlay p{
     text-align: center;
     font-size: 21px;
@@ -485,6 +493,7 @@ a[data-margin]{
     font-size: 40px;
     color:#4a4848;
 }
+
 .airpods_max_overlay p, .macbook_air_overlay p{
     text-align: center;
     font-size: 21px;
@@ -558,13 +567,13 @@ a[data-margin]{
     padding-left: 40px;
 }
 
-#close_button{
+#menu_close_button,#small_search_close_button{
     cursor: pointer;
     border: none;
     background-color: rgb(22,22,23);
 }
 
-#button_item{
+#menu_button_item,#small_search_close_button_box{
     display: flex;
     justify-content: flex-end;
     width: 100%;
@@ -606,8 +615,11 @@ a[data-margin]{
     .small_nav{
         display: flex;
     }
-    .menu_modal{
+    .menu_modal,.search_modal_small{
         display: block;
+    }
+    .nav_modals > :nth-last-child(n+3){
+        display: none;
     }
 }
 

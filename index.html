@@ -29,7 +29,7 @@
                         <a href=""><img src="apple_logo.svg" alt=""></a>
                     </div>
                     <div class="small_nav_right">
-                        <a href=""><img src="search.svg" alt=""></a>
+                        <a href="" id="small_search"><img src="search.svg" alt=""></a>
                         <a href=""><img src="cart.svg" alt=""></a>
                         <a href="" id="menu"><img src="menu.svg" alt=""></a>
                     </div>
@@ -327,9 +327,9 @@
                     </div>
                 </div>
             </div>
-            <div class="menu_modal open_modal">
+            <div class="menu_modal close_modal">
                 <ul class="menu_items">
-                    <li id="button_item"><button type="button" id="close_button"><img src="close.svg" alt=""></button></li>
+                    <li id="menu_button_item"><button type="button" id="menu_close_button"><img src="close.svg" alt=""></button></li>
                     <li id="item1"><a href=""><p>Store</p><img src="right.svg" alt=""></a></li>
                     <li id="item2"><a href=""><p>Mac</p><img src="right.svg" alt=""></a></li>
                     <li id="item3"><a href=""><p>iPad</p><img src="right.svg" alt=""></a></li>
@@ -341,6 +341,21 @@
                     <li id="item9"><a href=""><p>Accessories</p><img src="right.svg" alt=""></a></li>
                     <li id="item10"><a href=""><p>Support</p><img src="right.svg" alt=""></a></li>
                 </ul>
+            </div>
+            <div class="search_modal_small open_modal">
+                <div id="small_search_close_button_box">
+                    <button type="button" id="small_search_close_button">
+                        <img src="close.svg" alt="">
+                    </button>
+                </div>
+                <div class="search_modal_small_content">
+                    <input type="text" id="search_bar_small" placeholder="Search for any Apple product">
+                    <div class="result_box_small">
+                        <p id="no_item_found_small">No item found</p>
+                        <ul class="results_small">
+                        </ul>
+                    </div>
+                </div>
             </div>
         </div>
         <div class="content">
