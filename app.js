@@ -1,4 +1,3 @@
-
 let nav_bar_items = document.querySelector(".big_nav").querySelectorAll("a");
 let content = document.querySelector(".content");
 let nav_modals = document.querySelector(".nav_modals")
@@ -136,6 +135,7 @@ function hide_image(e){
 function show_image(e){    
     document.querySelector(`#${e.currentTarget.id} img`).style.opacity = 1;
 };
+
 
 
 
