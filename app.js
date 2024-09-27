@@ -136,6 +136,20 @@ function show_image(e){
     document.querySelector(`#${e.currentTarget.id} img`).style.opacity = 1;
 };
 
+let footer_content_middle_small_buttons = document.querySelectorAll(".footer_content_middle_small > * > button");
+footer_content_middle_small_buttons.forEach((button)=>{
+    button.addEventListener("click" , ()=>{
+        document.querySelector(`#${button.id} img`).classList.toggle("rotate");
+        if(button.nextElementSibling.classList.contains("close")){
+            button.nextElementSibling.classList.replace("close" , "open");
+        }
+        else{
+            button.nextElementSibling.classList.replace("open" , "close"); 
+        }
+    });
+})
+
+
 
 
 
