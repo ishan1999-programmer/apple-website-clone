@@ -1,29 +1,30 @@
-*{
-    margin: 0px;
-    padding: 0px;
-    box-sizing: border-box;
-    font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial, sans-serif;
-    text-decoration: none;
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+  font-family: SF Pro Text, SF Pro Icons, Helvetica Neue, Helvetica, Arial,
+    sans-serif;
+  text-decoration: none;
 }
 
-.main{
-    max-width: 2560px;
-    min-width: 400px;
-    margin: auto;
+.main {
+  max-width: 2560px;
+  min-width: 400px;
+  margin: auto;
 }
 
-.nav_bar img{
-    height: 25px;
-    width: 25px;
+.nav_bar img {
+  height: 25px;
+  width: 25px;
 }
 
-.small_nav_right{
-    width: 120px;
-    display: flex;
-    justify-content: space-between;
+.small_nav_right {
+  width: 120px;
+  display: flex;
+  justify-content: space-between;
 }
 
-.nav_bar a{
+.nav_bar a {
   text-decoration: none;
   color: #ffffffcc;
   font-size: 12px;
@@ -32,852 +33,889 @@
   align-items: center;
 }
 
-.nav_bar{
-    position: fixed;
-    left: 0%;
-    width: 100%;
-    height: 44px;
-    background-color: rgba(22, 22, 23, 0.9);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    padding-left: 15px;
-    padding-right: 15px;
-    z-index: 14;
+.nav_bar {
+  position: fixed;
+  left: 0%;
+  width: 100%;
+  height: 44px;
+  background-color: rgba(22, 22, 23, 0.9);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-left: 15px;
+  padding-right: 15px;
+  z-index: 14;
 }
 
-.nav_bar_items{
-    width: 1000px;
-    display: flex;
-    justify-content: space-between;
+.nav_bar_items {
+  width: 1000px;
+  display: flex;
+  justify-content: space-between;
 }
 
-.nav_modals > *{
-    position: fixed;
-    top: 44px;
-    left: 0px;
-    background-color: rgb(22,22,23);
-    transform-origin: top;
-    width: 100%;
-    transition-property: all;
-    transition-duration: 0.4s;
-    transition-timing-function: ease;
-    display: flex;
-    justify-content: center;
-    padding-left: 15px;
-    padding-right: 15px;
+.nav_modals > * {
+  position: fixed;
+  top: 44px;
+  left: 0px;
+  background-color: rgb(22, 22, 23);
+  transform-origin: top;
+  width: 100%;
+  transition-property: all;
+  transition-duration: 0.4s;
+  transition-timing-function: ease;
+  display: flex;
+  justify-content: center;
+  padding-left: 15px;
+  padding-right: 15px;
 }
 
-.store_modal{
-    height: 370px;
-    z-index: 2;
+.store_modal {
+  height: 370px;
+  z-index: 2;
 }
 
-.mac_modal{
-    height: 508px;
-    z-index: 3;
+.mac_modal {
+  height: 508px;
+  z-index: 3;
 }
 
-.ipad_modal{
-    height: 470px;
-    z-index: 4;
+.ipad_modal {
+  height: 470px;
+  z-index: 4;
 }
 
-.iphone_modal{
-    height: 432px;
-    z-index: 5;
+.iphone_modal {
+  height: 432px;
+  z-index: 5;
 }
 
-.watch_modal{
-    height: 394px;
-    z-index: 6;
+.watch_modal {
+  height: 394px;
+  z-index: 6;
 }
 
-.airpods_modal{
-    height: 332px;
-    z-index: 7;
+.airpods_modal {
+  height: 332px;
+  z-index: 7;
 }
 
-.tv_modal{
-    height: 362px;
-    z-index: 8;
+.tv_modal {
+  height: 362px;
+  z-index: 8;
 }
 
-.entertainment_modal{
-    height: 446px;
-    z-index: 9;
+.entertainment_modal {
+  height: 446px;
+  z-index: 9;
 }
 
-.accessories_modal{
-    height: 408px;
-    z-index: 10;
+.accessories_modal {
+  height: 408px;
+  z-index: 10;
 }
 
-.support_modal{
-    height: 446px;
-    z-index: 11;
+.support_modal {
+  height: 446px;
+  z-index: 11;
 }
 
-.search_modal{
-    height: 500px;
-    z-index: 12;
+.search_modal {
+  height: 500px;
+  z-index: 12;
 }
 
-.menu_modal,.search_modal_small{
-    position: fixed;
-    top: 0%;
-    height: 200vh;
-    background-color: rgb(22,22,23);
-    z-index: 15;
-    display: none;
+.menu_modal,
+.search_modal_small {
+  position: fixed;
+  top: 0%;
+  height: 200vh;
+  background-color: rgb(22, 22, 23);
+  z-index: 15;
+  display: none;
 }
 
-.close_modal{
-    transform: scaleY(0);
-    opacity: 0;
+.close_modal {
+  transform: scaleY(0);
+  opacity: 0;
 }
 
-.open_modal{
-    transform: scaleY(1);
-    opacity: 1;
+.open_modal {
+  transform: scaleY(1);
+  opacity: 1;
 }
 
-.nav_modals > :nth-last-child(n+4)  > :first-child{
-    padding-top: 40px;
-    width: 1000px;
-    display: flex;
-    gap: 90px;
+.nav_modals > :nth-last-child(n + 4) > :first-child {
+  padding-top: 40px;
+  width: 1000px;
+  display: flex;
+  gap: 90px;
 }
 
-.nav_modals > :nth-last-child(n+4)  > :first-child > *{
-    display: flex;
-    flex-direction: column;
-    gap: 10px;
+.nav_modals > :nth-last-child(n + 4) > :first-child > * {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
 }
 
-.nav_modals > :nth-last-child(n+4)  > :first-child > * > :first-child{
-    font-size: 12px;
-    color: #86868B;
-    margin-bottom: 8px;
+.nav_modals > :nth-last-child(n + 4) > :first-child > * > :first-child {
+  font-size: 12px;
+  color: #86868b;
+  margin-bottom: 8px;
 }
 
-.nav_modals > :nth-last-child(n+4)  > :first-child > :first-child > :not(:first-child){
-    font-size: 24px;
-    color: #E8E8ED;
+.nav_modals
+  > :nth-last-child(n + 4)
+  > :first-child
+  > :first-child
+  > :not(:first-child) {
+  font-size: 24px;
+  color: #e8e8ed;
 }
 
-.nav_modals > :nth-last-child(n+4)  > :first-child > :not(:first-child) > :not(:first-child){
-    font-size: 12px;
-    color: #E8E8ED;
+.nav_modals
+  > :nth-last-child(n + 4)
+  > :first-child
+  > :not(:first-child)
+  > :not(:first-child) {
+  font-size: 12px;
+  color: #e8e8ed;
 }
 
-a[data-margin]{
-    margin-bottom: 8px;
+a[data-margin] {
+  margin-bottom: 8px;
 }
 
-.search_modal_content{
-    width: 1000px;
-    height: 390px;
-    padding-top: 40px;
+.search_modal_content {
+  width: 1000px;
+  height: 390px;
+  padding-top: 40px;
 }
 
-.search_modal_small_content{
-    max-width: 500px;
-    height: 390px;
-    padding-top: 40px;
-    padding-left: 40px;
-    padding-right: 40px;
+.search_modal_small_content {
+  max-width: 500px;
+  height: 390px;
+  padding-top: 40px;
+  padding-left: 40px;
+  padding-right: 40px;
 }
 
-#search_bar,#search_bar_small{
-    width: 100%;
-    height: 35px;
-    padding: 20px;
-    font-size: large;
-    border: none;
-    border-radius: 10px;
-    background-color: #28282B;
-    color: white;
-    box-shadow: 0px 0px 10px 2px plum;
-    margin-bottom: 8px;
+#search_bar,
+#search_bar_small {
+  width: 100%;
+  height: 35px;
+  padding: 20px;
+  font-size: large;
+  border: none;
+  border-radius: 10px;
+  background-color: #28282b;
+  color: white;
+  box-shadow: 0px 0px 10px 2px plum;
+  margin-bottom: 8px;
 }
 
-.result_box,.result_box_small{
-    width: 100%;
-    height: 100%;
-    background-color: #28282B;
-    border-radius: 15px;
-    display: none;
-    padding: 15px;
+.result_box,
+.result_box_small {
+  width: 100%;
+  height: 100%;
+  background-color: #28282b;
+  border-radius: 15px;
+  display: none;
+  padding: 15px;
 }
 
-.results li, .results_small li{
-    list-style: none;
-    color: white;
-    font-size: larger;
-    border-bottom: 1px solid rgb(128, 128, 128, 0.3);
-    margin-bottom: 10px;
-    padding-bottom: 2px;
+.results li,
+.results_small li {
+  list-style: none;
+  color: white;
+  font-size: larger;
+  border-bottom: 1px solid rgb(128, 128, 128, 0.3);
+  margin-bottom: 10px;
+  padding-bottom: 2px;
 }
 
-#no_item_found,#no_item_found_small{
-    font-size: larger;
-    color: rgb(205, 30, 30);
-    font-style: italic;
-    font-weight: lighter;
-    display: none;
+#no_item_found,
+#no_item_found_small {
+  font-size: larger;
+  color: rgb(205, 30, 30);
+  font-style: italic;
+  font-weight: lighter;
+  display: none;
+}
+
+.content {
+  position: relative;
+  top: 44px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+}
+
+.iphone16pro,
+.iphone16,
+.apple_watch {
+  cursor: pointer;
+  position: relative;
+  height: 692px;
+}
+
+.image_medium,
+.image_small {
+  display: none;
 }
-
-.content{
-    position: relative;
-    top: 44px;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-}
-
-.iphone16pro,.iphone16,.apple_watch{
-    cursor: pointer;
-    position: relative;
-    height: 692px;
-}
-
-.image_medium,.image_small{
-    display: none;
-}
-
-.content > * > img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
-}
-
-.iphone16pro_overlay , .iphone16_overlay{
-    position: absolute;
-    bottom: 4%;
-    left: 50%;
-    transform: translate(-50%,0%);
-    width: 500px;
-    height: 600px;
-    margin-left: 10px;
-    display: flex;
-    flex-direction: column;
-    gap: 400px;
+
+.content > * > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.iphone16pro_overlay,
+.iphone16_overlay {
+  position: absolute;
+  bottom: 4%;
+  left: 50%;
+  transform: translate(-50%, 0%);
+  width: 500px;
+  height: 600px;
+  margin-left: 10px;
+  display: flex;
+  flex-direction: column;
+  gap: 400px;
 }
 
-.iphone16pro_overlay_top, .iphone16_overlay_top{
-    display: flex;
-    flex-direction: column;
+.iphone16pro_overlay_top,
+.iphone16_overlay_top {
+  display: flex;
+  flex-direction: column;
 }
 
-.iphone16pro_overlay_top h1 , .iphone16_overlay_top h1{
-    color: rgb(255,255,255);
-    font-size: 50px;
-    text-align: center;
+.iphone16pro_overlay_top h1,
+.iphone16_overlay_top h1 {
+  color: rgb(255, 255, 255);
+  font-size: 50px;
+  text-align: center;
 }
 
-.iphone16pro_overlay_top p , .iphone16_overlay_top p{
-    color: rgb(255,255,255);
-    font-size: 26px;
-    text-align: center;
+.iphone16pro_overlay_top p,
+.iphone16_overlay_top p {
+  color: rgb(255, 255, 255);
+  font-size: 26px;
+  text-align: center;
 }
-
-.iphone16pro_overlay_bottom , .iphone16_overlay_bottom{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-.iphone16pro_overlay_bottom .learn_buy, .iphone16_overlay_bottom .learn_buy, .apple_watch_overlay_bottom .learn_buy{
-    display: flex;
-    gap: 25px;
-    width: 100%;
-    margin-bottom: 15px;
-    justify-content: center;
+
+.iphone16pro_overlay_bottom,
+.iphone16_overlay_bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
 }
 
-.iphone16pro_overlay_bottom #learn, .iphone16_overlay_bottom #learn, .apple_watch_overlay_bottom #learn{
-    font-weight: 400;
-    font-size: 17px;
-    padding: 11px 21px;
-    border-radius: 50px;
-    color: rgb(255,255,255);
-    background-color: rgb(0,119,237);
-    text-align: center;
+.iphone16pro_overlay_bottom .learn_buy,
+.iphone16_overlay_bottom .learn_buy,
+.apple_watch_overlay_bottom .learn_buy {
+  display: flex;
+  gap: 25px;
+  width: 100%;
+  margin-bottom: 15px;
+  justify-content: center;
+}
+
+.iphone16pro_overlay_bottom #learn,
+.iphone16_overlay_bottom #learn,
+.apple_watch_overlay_bottom #learn {
+  font-weight: 400;
+  font-size: 17px;
+  padding: 11px 21px;
+  border-radius: 50px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 119, 237);
+  text-align: center;
 }
 
-.iphone16pro_overlay_bottom #buy, .iphone16_overlay_bottom #buy, .apple_watch_overlay_bottom #buy{
-    font-weight: 400;
-    font-size: 17px;
-    padding: 11px 21px;
-    border-radius: 50px;
-    color: rgb(41,151,255);
-    border: 1px solid rgb(41,151,255);
-    text-align: center;
+.iphone16pro_overlay_bottom #buy,
+.iphone16_overlay_bottom #buy,
+.apple_watch_overlay_bottom #buy {
+  font-weight: 400;
+  font-size: 17px;
+  padding: 11px 21px;
+  border-radius: 50px;
+  color: rgb(41, 151, 255);
+  border: 1px solid rgb(41, 151, 255);
+  text-align: center;
 }
 
-.iphone16pro_overlay_bottom #buy:hover, .iphone16_overlay_bottom #buy:hover, .apple_watch_overlay_bottom #buy:hover{
-    color: rgb(255,255,255);
-    background-color: rgb(0,119,237);
+.iphone16pro_overlay_bottom #buy:hover,
+.iphone16_overlay_bottom #buy:hover,
+.apple_watch_overlay_bottom #buy:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 119, 237);
 }
 
-.iphone16pro_overlay_bottom p, .iphone16_overlay_bottom p{
-    color: rgb(115,110,113);
-    font-size: 20px;
-    font-weight: 400;
-    text-align: center;
+.iphone16pro_overlay_bottom p,
+.iphone16_overlay_bottom p {
+  color: rgb(115, 110, 113);
+  font-size: 20px;
+  font-weight: 400;
+  text-align: center;
 }
 
-.apple_watch_overlay{
-    position: absolute;
-    top: 8%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 230px;
-    height: 200px;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.apple_watch_overlay {
+  position: absolute;
+  top: 8%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 230px;
+  height: 200px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
 
-.apple_watch_overlay_top{
-    display: flex;
-    justify-content: center;
+.apple_watch_overlay_top {
+  display: flex;
+  justify-content: center;
 }
 
-.apple_watch_overlay_top img{
-    width: 200px;
-    height: 100%;
+.apple_watch_overlay_top img {
+  width: 200px;
+  height: 100%;
 }
 
-.apple_watch_overlay_bottom{
-    width: 100%;
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
+.apple_watch_overlay_bottom {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
 }
-
-.apple_watch_overlay_bottom p{
-    font-size: 26px;
-    font-weight: 400;
-    color:#4a4848;
-    text-align: center;
 
+.apple_watch_overlay_bottom p {
+  font-size: 26px;
+  font-weight: 400;
+  color: #4a4848;
+  text-align: center;
 }
 
-.products_grid{
-    margin-left: 12px;
-    margin-right: 12px;
-    display: grid;
-    grid-template-columns: repeat(2,1fr);
-    grid-template-rows: repeat(3,580px);
-    gap: 12px;
+.products_grid {
+  margin-left: 12px;
+  margin-right: 12px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: repeat(3, 580px);
+  gap: 12px;
 }
 
-.products_grid > *{
-    position: relative;
+.products_grid > * {
+  position: relative;
 }
 
-.apple_watch_ultra_overlay{
-    position: absolute;
-    top: 9%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 212px;
-    height: 170px;
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
-    align-items: center;
+.apple_watch_ultra_overlay {
+  position: absolute;
+  top: 9%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 212px;
+  height: 170px;
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
+  align-items: center;
 }
 
-.products_grid > * > img{
-    width: 100%;
-    height: 100%;
-    object-fit: cover;
+.products_grid > * > img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
 }
 
-.apple_watch_ultra_overlay_top{
-    display: flex;
-    justify-content: center;
+.apple_watch_ultra_overlay_top {
+  display: flex;
+  justify-content: center;
 }
 
-.apple_watch_ultra_overlay_top img{
-    width: 200px;
-    height: 100%;
+.apple_watch_ultra_overlay_top img {
+  width: 200px;
+  height: 100%;
 }
 
-.apple_watch_ultra_overlay_bottom{
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    gap: 20px;
+.apple_watch_ultra_overlay_bottom {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
 }
 
-.apple_watch_ultra_overlay_bottom p{
-    font-size: 21px;
-    color: white;
+.apple_watch_ultra_overlay_bottom p {
+  font-size: 21px;
+  color: white;
 }
 
-.products_grid .learn_buy{
-    display: flex;
-    gap: 12px;
+.products_grid .learn_buy {
+  display: flex;
+  gap: 12px;
 }
 
-.products_grid #learn, #get_estimate{
-    font-weight: 400;
-    font-size: 14px;
-    padding: 7px 15px;
-    border-radius: 50px;
-    color: rgb(255,255,255);
-    background-color: rgb(0,119,237);
+.products_grid #learn,
+#get_estimate {
+  font-weight: 400;
+  font-size: 14px;
+  padding: 7px 15px;
+  border-radius: 50px;
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 119, 237);
 }
 
-.products_grid #buy{
-    font-weight: 400;
-    font-size: 14px;
-    padding: 7px 15px;
-    border-radius: 50px;
-    color: rgb(41,151,255);
-    border: 1px solid rgb(41,151,255);
+.products_grid #buy {
+  font-weight: 400;
+  font-size: 14px;
+  padding: 7px 15px;
+  border-radius: 50px;
+  color: rgb(41, 151, 255);
+  border: 1px solid rgb(41, 151, 255);
 }
 
-.products_grid #buy:hover{
-    color: rgb(255,255,255);
-    background-color: rgb(0,119,237);
+.products_grid #buy:hover {
+  color: rgb(255, 255, 255);
+  background-color: rgb(0, 119, 237);
 }
 
-.airpods_overlay{
-    position: absolute;
-    bottom: 6%;
-    left: 50%;
-    transform: translateX(-50%);
-    height: 180px;
-    width: 400px;
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
-    align-items: center;
+.airpods_overlay {
+  position: absolute;
+  bottom: 6%;
+  left: 50%;
+  transform: translateX(-50%);
+  height: 180px;
+  width: 400px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  align-items: center;
 }
 
-.airpods_overlay h1, .ipad_pro_overlay h1{
-    font-weight: 500;
-    font-size: 40px;
-    color: white;
+.airpods_overlay h1,
+.ipad_pro_overlay h1 {
+  font-weight: 500;
+  font-size: 40px;
+  color: white;
 }
 
-.airpods_overlay p , .ipad_pro_overlay p{
-    text-align: center;
-    font-size: 21px;
-    color: white;
+.airpods_overlay p,
+.ipad_pro_overlay p {
+  text-align: center;
+  font-size: 21px;
+  color: white;
 }
 
-.ipad_pro_overlay p{
-    margin-bottom: 15px;
+.ipad_pro_overlay p {
+  margin-bottom: 15px;
 }
 
-.airpods_max_overlay{
-    width: 400px;
-    position: absolute;
-    bottom: 8%;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-    align-items: center;
+.airpods_max_overlay {
+  width: 400px;
+  position: absolute;
+  bottom: 8%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  align-items: center;
 }
 
-.airpods_max_overlay h1, .macbook_air_overlay h1{
-    font-weight: 500;
-    font-size: 40px;
-    color:#4a4848;
+.airpods_max_overlay h1,
+.macbook_air_overlay h1 {
+  font-weight: 500;
+  font-size: 40px;
+  color: #4a4848;
 }
 
-.airpods_max_overlay p, .macbook_air_overlay p{
-    text-align: center;
-    font-size: 21px;
-    color:#4a4848;
-    margin-bottom: 10px;
+.airpods_max_overlay p,
+.macbook_air_overlay p {
+  text-align: center;
+  font-size: 21px;
+  color: #4a4848;
+  margin-bottom: 10px;
 }
 
-.macbook_air_overlay, .ipad_pro_overlay{
-    width: 400px;
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translateX(-50%);
-    display: flex;
-    flex-direction: column;
-    gap: 2px;
-    align-items: center;
+.macbook_air_overlay,
+.ipad_pro_overlay {
+  width: 400px;
+  position: absolute;
+  top: 10%;
+  left: 50%;
+  transform: translateX(-50%);
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  align-items: center;
 }
 
-.ipad_pro_overlay{
-    top: 8%;
+.ipad_pro_overlay {
+  top: 8%;
 }
 
-.iphone_tradein_overlay{
-    position: absolute;
-    top: 8%;
-    left: 50%;
-    transform: translateX(-50%);
-    width: 320px;
-    height: 125px;
-    display: flex;
-    flex-direction: column;
-    gap: 8px;
-    align-items: center;
+.iphone_tradein_overlay {
+  position: absolute;
+  top: 8%;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 320px;
+  height: 125px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  align-items: center;
 }
 
-.iphone_tradein_overlay_bottom p{
-    font-size: 21px;
+.iphone_tradein_overlay_bottom p {
+  font-size: 21px;
 }
 
-.iphone_tradein_overlay_top{
-    width: 150px;
+.iphone_tradein_overlay_top {
+  width: 150px;
 }
 
-.iphone_tradein_overlay_top img{
-    width: 100%;
+.iphone_tradein_overlay_top img {
+  width: 100%;
 }
 
-.iphone_tradein_overlay_bottom{
-    display: flex;
-    flex-direction: column;
-    gap: 15px;
+.iphone_tradein_overlay_bottom {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
 }
 
-.iphone_tradein_overlay_bottom a{
-    align-self: center;
-    width: 142px;
+.iphone_tradein_overlay_bottom a {
+  align-self: center;
+  width: 142px;
 }
 
-.small_nav{
-    display: none;
+.small_nav {
+  display: none;
 }
 
-.menu_items img{
-    height: 25px;
-    width: 25px;
+.menu_items img {
+  height: 25px;
+  width: 25px;
 }
 
-.menu_items{
-    width: 100%;
-    padding-left: 40px;
+.menu_items {
+  width: 100%;
+  padding-left: 40px;
 }
 
-#menu_close_button,#small_search_close_button{
-    cursor: pointer;
-    border: none;
-    background-color: rgb(22,22,23);
+#menu_close_button,
+#small_search_close_button {
+  cursor: pointer;
+  border: none;
+  background-color: rgb(22, 22, 23);
 }
 
-#menu_button_item,#small_search_close_button_box{
-    display: flex;
-    justify-content: flex-end;
-    width: 100%;
-    height: 54px;
-    list-style: none;
+#menu_button_item,
+#small_search_close_button_box {
+  display: flex;
+  justify-content: flex-end;
+  width: 100%;
+  height: 54px;
+  list-style: none;
 }
 
-.menu_items > :not(:first-child){
-    width: 100%;
-    height: 50px;
-    list-style: none;
-    display: flex;
-    align-items: center;
-    cursor: pointer;
+.menu_items > :not(:first-child) {
+  width: 100%;
+  height: 50px;
+  list-style: none;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
 }
 
-.menu_items > :not(:first-child) img{
-    transition: all;
-    transition-duration: 0.2s;
-    opacity: 0;
+.menu_items > :not(:first-child) img {
+  transition: all;
+  transition-duration: 0.2s;
+  opacity: 0;
 }
 
-.menu_items a{
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
+.menu_items a {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
 }
 
-.menu_items p{
-    color: #E8E8ED;
-    font-size: 28px;
-    font-weight: 500;
+.menu_items p {
+  color: #e8e8ed;
+  font-size: 28px;
+  font-weight: 500;
 }
 
-.footer{
-    position: relative;
-    width: 100%;
-    background-color: rgb(245,245,247);
-    margin-top: 10px;
+.footer {
+  position: relative;
+  width: 100%;
+  background-color: rgb(245, 245, 247);
+  margin-top: 10px;
 }
 
-.footer_content{
-    max-width: 1024px;
-    margin: auto;
-    height: 100%;
-    padding: 22px;
+.footer_content {
+  max-width: 1024px;
+  margin: auto;
+  height: 100%;
+  padding: 22px;
 }
 
-.footer_content_top{
-    padding-bottom: 15px;
-    border-bottom: 1px solid rgba(0,0,0,0.16);
+.footer_content_top {
+  padding-bottom: 15px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.16);
 }
 
-.footer_content_top p{
-    margin-bottom: 10px;
-    font-size: 12px;
-    color: rgba(0,0,0,0.56);
+.footer_content_top p {
+  margin-bottom: 10px;
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.56);
 }
 
-.footer_content_middle{
-    display: flex;
-    gap: 10px;
-    padding-top: 20px;
-    padding-bottom: 20px;
-    border-bottom: 1px solid rgba(0,0,0,0.16);
+.footer_content_middle {
+  display: flex;
+  gap: 10px;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid rgba(0, 0, 0, 0.16);
 }
 
-.footer_content_middle > *{
-    width: 600px;
-    display: flex;
-    flex-direction: column;
-    gap: 30px;
+.footer_content_middle > * {
+  width: 600px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
 }
 
-.footer_content_middle > * > *{
-    display: flex;
-    flex-direction: column;
-    gap: 12px;
+.footer_content_middle > * > * {
+  display: flex;
+  flex-direction: column;
+  gap: 12px;
 }
 
-.footer_content_middle > * > * > :first-child{
-    font-size: 12px;
-    font-weight: 600;
-    color: #000000e0;
+.footer_content_middle > * > * > :first-child {
+  font-size: 12px;
+  font-weight: 600;
+  color: #000000e0;
 }
 
-.footer_content_middle > * > * > :not(:first-child){
-    font-size: 12px;
-    color: rgba(0,0,0,0.72);
+.footer_content_middle > * > * > :not(:first-child) {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.72);
 }
 
-.footer_content_bottom{
-    padding-top: 20px;
+.footer_content_bottom {
+  padding-top: 20px;
 }
 
-.footer_content_bottom > :first-child{
-    font-size: 12px;
-    color: rgba(0,0,0,0.56);
-    margin-bottom: 8px;
+.footer_content_bottom > :first-child {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.56);
+  margin-bottom: 8px;
 }
 
-.footer_content_bottom > :not(:first-child){
-    font-size: 12px;
-    color: rgba(0,0,0,0.72);
+.footer_content_bottom > :not(:first-child) {
+  font-size: 12px;
+  color: rgba(0, 0, 0, 0.72);
 }
 
-.footer_content a:hover{
-    text-decoration: underline;
+.footer_content a:hover {
+  text-decoration: underline;
 }
 
-.footer_content_middle_small img{
-    width: 25px;
-    height: 25px;
+.footer_content_middle_small img {
+  width: 25px;
+  height: 25px;
 }
 
-.footer_content_middle_small{
-    display: none;
+.footer_content_middle_small {
+  display: none;
 }
 
-.footer_content_middle_small > *{
-    border-bottom: 1px solid rgba(0,0,0,0.16);
-    padding-top: 10px;
-    padding-bottom: 10px;
+.footer_content_middle_small > * {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.16);
+  padding-top: 10px;
+  padding-bottom: 10px;
 }
-.footer_content_middle_small > * > button{
-    cursor: pointer;
-    width: 100%;
-    border: none;
-    background-color: rgb(245,245,247);
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+.footer_content_middle_small > * > button {
+  cursor: pointer;
+  width: 100%;
+  border: none;
+  background-color: rgb(245, 245, 247);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
 }
 
-.footer_content_middle_small > * > div{
-    margin-top: 10px;
-    max-height: 250px;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 12px;
-    transition: all;
-    transition-duration: 0.3s;
-    transform-origin: top;
+.footer_content_middle_small > * > div {
+  margin-top: 10px;
+  max-height: 250px;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 12px;
+  transition: all;
+  transition-duration: 0.3s;
+  transform-origin: top;
 }
 
-.footer_content_middle_small a{
-    color: rgba(0,0,0,0.72);
-    font-size: 12px;
+.footer_content_middle_small a {
+  color: rgba(0, 0, 0, 0.72);
+  font-size: 12px;
 }
 
-.close{
-    display: none;
+.close {
+  display: none;
 }
 
-.open{
-    display: flex;
+.open {
+  display: flex;
 }
 
-.button_image{
-    transition: all;
-    transition-duration: 0.2s;
+.button_image {
+  transition: all;
+  transition-duration: 0.2s;
 }
 
-.rotate{
-    transform: rotate(180deg);
+.rotate {
+  transform: rotate(180deg);
 }
 
 @media (width<834px) {
-    .big_nav{
-        display: none;
-    }
-    .small_nav{
-        display: flex;
-    }
-    .menu_modal,.search_modal_small{
-        display: block;
-    }
-    .nav_modals > :nth-last-child(n+3){
-        display: none;
-    }
-    .footer_content_middle{
-        display: none;
-    }
-    .footer_content_middle_small{
-        display: block;
-    }
+  .big_nav {
+    display: none;
+  }
+  .small_nav {
+    display: flex;
+  }
+  .menu_modal,
+  .search_modal_small {
+    display: block;
+  }
+  .nav_modals > :nth-last-child(n + 3) {
+    display: none;
+  }
+  .footer_content_middle {
+    display: none;
+  }
+  .footer_content_middle_small {
+    display: block;
+  }
 }
 
 @media (width<1069px) and (width>=735px) {
-    .content > :nth-last-child(n+3){
-        height: 650px;
-    }
-    .image_big{
-        display: none;
-    }
-    .image_medium{
-        display: block;
-    }
-    .iphone16pro_overlay_top h1 , .iphone16_overlay_top h1{
-        font-size: 47px;
-    }
-    .iphone16pro_overlay_top p , .iphone16_overlay_top p{
-        font-size: 23px;
-    }
+  .content > :nth-last-child(n + 3) {
+    height: 650px;
+  }
+  .image_big {
+    display: none;
+  }
+  .image_medium {
+    display: block;
+  }
+  .iphone16pro_overlay_top h1,
+  .iphone16_overlay_top h1 {
+    font-size: 47px;
+  }
+  .iphone16pro_overlay_top p,
+  .iphone16_overlay_top p {
+    font-size: 23px;
+  }
 
-    .iphone16pro_overlay_bottom p, .iphone16_overlay_bottom p{
-        font-size: 17px;
-    }
-    .iphone16pro_overlay , .iphone16_overlay{
-        transform: translate(-50%,6%);
-    }
+  .iphone16pro_overlay_bottom p,
+  .iphone16_overlay_bottom p {
+    font-size: 17px;
+  }
+  .iphone16pro_overlay,
+  .iphone16_overlay {
+    transform: translate(-50%, 6%);
+  }
 
-    .ipad_pro_overlay p{
-        width: 230px;
-    }
+  .ipad_pro_overlay p {
+    width: 230px;
+  }
 
-    .airpods_overlay p{
-        width: 230px;
-    }
+  .airpods_overlay p {
+    width: 230px;
+  }
 }
 
 @media (width<735px) {
-    .content > :nth-last-child(n+3) > .image_big{
-        display: none;
-    }
-    .content > :nth-last-child(n+3)> .image_small{
-        display: block;
-    }
-    .content > :nth-last-child(n+3){
-        height: 500px;
-    }
-    .content > :nth-last-child(2){
-        margin: 0px;
-        grid-template-columns: 1fr;
-        grid-template-rows: repeat(6,500px);
-    }
-    .content > :nth-last-child(2) > .image_big{
-        display: none;
-    }
-    .content > :nth-last-child(2) > .image_medium{
-        display: block;
-    }
-    .content > :nth-last-child(2) > :first-child > div img{
-        width: 120px;
-    }
-    .content > :nth-last-child(2) h1{
-        font-size: 35px;
-    }
-    .content > :nth-last-child(2) p{
-        font-size: 17px;
-    }
-    .iphone16pro_overlay_top h1 , .iphone16_overlay_top h1{
-        font-size: 35px;
-    }
-    .iphone16pro_overlay_top p , .iphone16_overlay_top p{
-        font-size: 17px;
-    }
-    .iphone16pro_overlay_bottom p, .iphone16_overlay_bottom p{
-        font-size: 17px;
-    }
-    .iphone16pro_overlay , .iphone16_overlay{
-        width: 340px;
-        height: 380px;
-        bottom: 15%;
-        gap: 220px;
-    }
-    .iphone16pro_overlay_bottom .learn_buy, .iphone16_overlay_bottom .learn_buy, .apple_watch_overlay_bottom .learn_buy{
-        gap: 15px;
-    }
-    .iphone16pro_overlay_bottom #learn, .iphone16_overlay_bottom #learn, .apple_watch_overlay_bottom #learn{
-        font-size: 14px;
-        padding: 7px 15px;
-    }
-    .iphone16pro_overlay_bottom #buy, .iphone16_overlay_bottom #buy, .apple_watch_overlay_bottom #buy{
-        font-size: 14px;
-        padding: 7px 15px;
-    }
-    .apple_watch_overlay{
-        width: 190px;
-        height: 165px;
-    }
+  .content > :nth-last-child(n + 3) > .image_big {
+    display: none;
+  }
+  .content > :nth-last-child(n + 3) > .image_small {
+    display: block;
+  }
+  .content > :nth-last-child(n + 3) {
+    height: 500px;
+  }
+  .content > :nth-last-child(2) {
+    margin: 0px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(6, 500px);
+  }
+  .content > :nth-last-child(2) > .image_big {
+    display: none;
+  }
+  .content > :nth-last-child(2) > .image_medium {
+    display: block;
+  }
+  .content > :nth-last-child(2) > :first-child > div img {
+    width: 120px;
+  }
+  .content > :nth-last-child(2) h1 {
+    font-size: 35px;
+  }
+  .content > :nth-last-child(2) p {
+    font-size: 17px;
+  }
+  .iphone16pro_overlay_top h1,
+  .iphone16_overlay_top h1 {
+    font-size: 35px;
+  }
+  .iphone16pro_overlay_top p,
+  .iphone16_overlay_top p {
+    font-size: 17px;
+  }
+  .iphone16pro_overlay_bottom p,
+  .iphone16_overlay_bottom p {
+    font-size: 17px;
+  }
+  .iphone16pro_overlay,
+  .iphone16_overlay {
+    width: 340px;
+    height: 380px;
+    bottom: 15%;
+    gap: 220px;
+  }
+  .iphone16pro_overlay_bottom .learn_buy,
+  .iphone16_overlay_bottom .learn_buy,
+  .apple_watch_overlay_bottom .learn_buy {
+    gap: 15px;
+  }
+  .iphone16pro_overlay_bottom #learn,
+  .iphone16_overlay_bottom #learn,
+  .apple_watch_overlay_bottom #learn {
+    font-size: 14px;
+    padding: 7px 15px;
+  }
+  .iphone16pro_overlay_bottom #buy,
+  .iphone16_overlay_bottom #buy,
+  .apple_watch_overlay_bottom #buy {
+    font-size: 14px;
+    padding: 7px 15px;
+  }
+  .apple_watch_overlay {
+    width: 190px;
+    height: 165px;
+  }
 
-    .apple_watch_overlay img{
-        width: 120px;
-    }
-    .apple_watch_overlay_bottom p{
-        font-size: 17px;
-    }
-    .apple_watch_overlay_bottom{
-        gap: 10px;
-    }
+  .apple_watch_overlay img {
+    width: 120px;
+  }
+  .apple_watch_overlay_bottom p {
+    font-size: 17px;
+  }
+  .apple_watch_overlay_bottom {
+    gap: 10px;
+  }
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
